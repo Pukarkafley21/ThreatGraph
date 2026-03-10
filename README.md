@@ -6,7 +6,6 @@ ThreatGraph automatically detects, correlates, and explains attacks from raw sec
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.35+-red?logo=streamlit)
-![License](https://img.shields.io/badge/License-MIT-green)
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-v14-orange)
 
 ---
