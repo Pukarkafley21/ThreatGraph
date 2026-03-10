@@ -1,0 +1,21 @@
+Jan 15 11:58:01 server sshd[1234]: Failed password for root from 194.88.21.10 port 52341 ssh2
+Jan 15 11:58:03 server sshd[1234]: Failed password for root from 194.88.21.10 port 52342 ssh2
+Jan 15 11:58:05 server sshd[1234]: Failed password for admin from 194.88.21.10 port 52343 ssh2
+Jan 15 11:58:07 server sshd[1234]: Failed password for admin from 194.88.21.10 port 52344 ssh2
+Jan 15 11:58:09 server sshd[1234]: Failed password for john from 194.88.21.10 port 52345 ssh2
+Jan 15 11:58:11 server sshd[1234]: Failed password for john from 194.88.21.10 port 52346 ssh2
+Jan 15 11:58:13 server sshd[1234]: Failed password for john from 194.88.21.10 port 52347 ssh2
+Jan 15 11:58:15 server sshd[1234]: Failed password for john from 194.88.21.10 port 52348 ssh2
+Jan 15 11:58:17 server sshd[1234]: Failed password for john from 194.88.21.10 port 52349 ssh2
+Jan 15 11:58:19 server sshd[1234]: Failed password for john from 194.88.21.10 port 52350 ssh2
+Jan 15 11:58:21 server sshd[1234]: Failed password for john from 194.88.21.10 port 52351 ssh2
+Jan 15 11:58:23 server sshd[1234]: Failed password for john from 194.88.21.10 port 52352 ssh2
+Jan 15 11:58:31 server sshd[1235]: Accepted password for john from 194.88.21.10 port 52360 ssh2
+Jan 15 11:58:31 server sshd[1235]: pam_unix(sshd:session): session opened for user john by (uid=0)
+Jan 15 11:59:00 server sudo[2001]: john : TTY=pts/0 ; PWD=/home/john ; USER=root ; COMMAND=/bin/bash
+Jan 15 11:59:05 server sudo[2001]: pam_unix(sudo:session): session opened for user root by john(uid=1001)
+Jan 15 12:00:00 server useradd[2100]: new user: name=backdoor, UID=1337, GID=1337, home=/home/backdoor, shell=/bin/bash
+Jan 15 12:00:05 server usermod[2101]: add 'backdoor' to group 'sudo'
+Jan 15 12:01:00 server sshd[2200]: Failed password for root from 10.0.0.5 port 33201 ssh2
+Jan 15 12:01:02 server sshd[2200]: Failed password for root from 10.0.0.5 port 33202 ssh2
+Jan 15 12:04:00 server sshd[2300]: Disconnected from 194.88.21.10 port 52360 [preauth]

@@ -1,0 +1,10 @@
+2024-01-15 12:00:01 EventID=1 ProcessCreate Image=C:\Windows\System32\cmd.exe CommandLine="cmd.exe /c whoami" User=WORKSTATION\john ParentImage=C:\Windows\explorer.exe
+2024-01-15 12:00:45 EventID=1 ProcessCreate Image=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe CommandLine="powershell.exe -nop -w hidden -enc JABjAGwAaQBlAG4AdA" User=WORKSTATION\john ParentImage=C:\Windows\System32\cmd.exe
+2024-01-15 12:01:02 EventID=3 NetworkConnect SourceIp=192.168.1.50 DestinationIp=194.88.21.10 DestinationPort=443 Image=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+2024-01-15 12:01:15 EventID=1 ProcessCreate Image=C:\Windows\System32\net.exe CommandLine="net user backdoor P@ssw0rd! /add" User=WORKSTATION\john ParentImage=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+2024-01-15 12:01:20 EventID=1 ProcessCreate Image=C:\Windows\System32\net.exe CommandLine="net localgroup administrators backdoor /add" User=WORKSTATION\john ParentImage=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+2024-01-15 12:02:00 EventID=11 FileCreate TargetFilename=C:\Users\john\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\update.bat Image=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+2024-01-15 12:02:30 EventID=3 NetworkConnect SourceIp=192.168.1.50 DestinationIp=194.88.21.10 DestinationPort=4444 Image=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+2024-01-15 12:03:00 EventID=1 ProcessCreate Image=C:\Windows\System32\reg.exe CommandLine="reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v Update /t REG_SZ /d C:\backdoor.exe" User=WORKSTATION\john ParentImage=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+2024-01-15 12:03:45 EventID=3 NetworkConnect SourceIp=192.168.1.50 DestinationIp=194.88.21.10 DestinationPort=443 BytesSent=45234567 Image=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+2024-01-15 12:04:00 EventID=1 ProcessCreate Image=C:\Windows\System32\schtasks.exe CommandLine="schtasks /create /tn UpdateTask /tr C:\backdoor.exe /sc daily" User=WORKSTATION\john ParentImage=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
