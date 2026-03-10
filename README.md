@@ -282,9 +282,7 @@ Pull requests welcome. Please open an issue first for large changes.
 
 ---
 
-## License
 
-MIT - see [LICENSE](LICENSE)
 
 ---
 
